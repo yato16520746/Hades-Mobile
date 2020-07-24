@@ -76,41 +76,41 @@ public class Player : MonoBehaviour
         float horizontal = 0f;
         float vertical = 0f;
 
-        if ((Input.GetKey(KeyCode.D) && Input.GetKey(KeyCode.A)) ||
-            (!Input.GetKey(KeyCode.D) && !Input.GetKey(KeyCode.A)))
-        {
-            horizontal = 0;
-        }
-        else
-        {
-            if (Input.GetKey(KeyCode.D))
-            {
-                horizontal = 1;
-            }
+        //if ((Input.GetKey(KeyCode.D) && Input.GetKey(KeyCode.A)) ||
+        //    (!Input.GetKey(KeyCode.D) && !Input.GetKey(KeyCode.A)))
+        //{
+        //    horizontal = 0;
+        //}
+        //else
+        //{
+        //    if (Input.GetKey(KeyCode.D))
+        //    {
+        //        horizontal = 1;
+        //    }
 
-            if (Input.GetKey(KeyCode.A))
-            {
-                horizontal = -1;
-            }
-        }
+        //    if (Input.GetKey(KeyCode.A))
+        //    {
+        //        horizontal = -1;
+        //    }
+        //}
 
-        if ((Input.GetKey(KeyCode.W) && Input.GetKey(KeyCode.S)) ||
-           (!Input.GetKey(KeyCode.W) && !Input.GetKey(KeyCode.S)))
-        {
-            vertical = 0;
-        }
-        else
-        {
-            if (Input.GetKey(KeyCode.W))
-            {
-                vertical = 1;
-            }
+        //if ((Input.GetKey(KeyCode.W) && Input.GetKey(KeyCode.S)) ||
+        //   (!Input.GetKey(KeyCode.W) && !Input.GetKey(KeyCode.S)))
+        //{
+        //    vertical = 0;
+        //}
+        //else
+        //{
+        //    if (Input.GetKey(KeyCode.W))
+        //    {
+        //        vertical = 1;
+        //    }
 
-            if (Input.GetKey(KeyCode.S))
-            {
-                vertical = -1;
-            }
-        }
+        //    if (Input.GetKey(KeyCode.S))
+        //    {
+        //        vertical = -1;
+        //    }
+        //}
 
         _moveDirection = new Vector3(horizontal, 0f, vertical);
         _moveDirection = _moveDirection.normalized;
